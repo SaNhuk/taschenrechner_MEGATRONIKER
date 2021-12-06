@@ -27,6 +27,10 @@ public class TaschenrechnerModel {
             return this.ersterOperand + this.zweiterOperand;
         } else if (this.operator == "-") {
             return this.ersterOperand - this.zweiterOperand;
+        } else if (this.operator == "*") {
+            return this.ersterOperand * this.zweiterOperand;
+        } else if (this.operator == "/") {
+            return (int) (this.ersterOperand / this.zweiterOperand);
         } else return this.zweiterOperand;
     }
 }
